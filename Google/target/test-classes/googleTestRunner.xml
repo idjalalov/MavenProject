@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Google test on web browser">
+    <parameter name = "url" value="http://www.google.com" />
+    <test name="Google homepage">
+        <classes>
+            <class name="com.google.GoogleHome" />
+        </classes>
+    </test>
+</suite>
+

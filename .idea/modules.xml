@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Amazon/Amazon.iml" filepath="$PROJECT_DIR$/Amazon/Amazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cnn/Cnn.iml" filepath="$PROJECT_DIR$/Cnn/Cnn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Common/Common.iml" filepath="$PROJECT_DIR$/Common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FunctionalTest.iml" filepath="$PROJECT_DIR$/FunctionalTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Google/Google.iml" filepath="$PROJECT_DIR$/Google/Google.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sears/Sears.iml" filepath="$PROJECT_DIR$/Sears/Sears.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yahoo/Yahoo.iml" filepath="$PROJECT_DIR$/Yahoo/Yahoo.iml" />
+    </modules>
+  </component>
+</project>
