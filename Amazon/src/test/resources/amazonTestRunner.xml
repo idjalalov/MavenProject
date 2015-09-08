@@ -5,7 +5,7 @@
         <parameter name = "url" value="http://www.amazon.com" />
             <test name="Amazon homepage">
                 <classes>
-                    <class name="com.amazon.AmazonHome" />
+                    <class name="com.amazon.AmazonHome1" />
                     <!--<class name="com.amazon.AmazonLogin" />-->
                 </classes>
                 </test>

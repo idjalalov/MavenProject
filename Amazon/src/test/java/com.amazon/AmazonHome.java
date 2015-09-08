@@ -26,7 +26,7 @@ public class AmazonHome extends Base {
         search.sendKeys("photo printer");
         search.submit();
 
-
+        // Creat a list of Webelements from Titles
         List<WebElement> allTitles = driver.findElements(By.cssSelector(".a-size-medium.a-color-null.s-inline.s-access-title.a-text-normal"));
         String[] titlesText = new String[allTitles.size()];
         for (WebElement eachTitle : allTitles) {
@@ -35,13 +35,13 @@ public class AmazonHome extends Base {
             }
         }
 
-
+        // Creat a list of Webelements from Prices
         List<WebElement> allPrices = driver.findElements(By.cssSelector(".a-size-base.a-color-price.s-price.a-text-bold"));
         String[] prices = new String[allPrices.size()];
-
         for (WebElement eachPrice : allPrices) {
             for (int k = 0; k < (allPrices.size()-1); k++) {
                 titlesText[k] = eachPrice.getText();
+                System.out.println(titlesText[k]);
             }
         }
 
@@ -52,7 +52,12 @@ public class AmazonHome extends Base {
             mySearch[i] = new SearchList(titlesText[i], prices[i]);
         }
 
-        System.out.println(deepToString(mySearch));
-
     }
+
+
+
+
 }
+
+
+
