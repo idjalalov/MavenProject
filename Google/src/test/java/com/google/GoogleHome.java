@@ -19,8 +19,7 @@ public class GoogleHome extends Base {
         search.sendKeys("photo printer");
         search.submit();
 
-        //==============Here logic goes =======================
-        //get all the search result
+
         List<WebElement> allSearchResults = driver.findElements(By.cssSelector(".r>a"));
 
         //iterate the above list to get all the search titles & links from that page

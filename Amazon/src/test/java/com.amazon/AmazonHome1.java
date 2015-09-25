@@ -20,7 +20,7 @@ public class AmazonHome1 extends Base {
     public void openUP() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement search = driver.findElement(By.cssSelector("#twotabsearchtextbox"));
-        search.sendKeys("digital camera");
+        search.sendKeys("laser printer");
         search.submit();
 
 
@@ -36,12 +36,12 @@ public class AmazonHome1 extends Base {
         String [][] str = new String[allTitles.size()-1][2];
 
 
-        for (int i=0; i < allTitles.size()-1; i++){
+        for (int i=0; i < allTitles.size()-2; i++){
             str[i][0]=allTitles.get(i).getText();
             str[i][1]=allSalePrices.get(i).getText();
             //str[i][2]=allOriginalPrices.get(i).getText();
         }
-        for (int k=0; k < allTitles.size()-1; k++){
+        for (int k=0; k < allTitles.size()-2; k++){
             System.out.println(str[k][0]+"-----"+str[k][1]);
         }
 
@@ -66,7 +66,7 @@ public class AmazonHome1 extends Base {
                 fileWriter.append(NEW_LINE_SEPARATOR);
 
                 //Write a new student object list to the CSV file
-                for (int i=0; i<allSalePrices.size()-1; i++) {
+                for (int i=0; i<allSalePrices.size()-2; i++) {
                     fileWriter.append('"');
                     fileWriter.append(str[i][0]);
                     fileWriter.append('"');

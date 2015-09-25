@@ -2,7 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
     <suite name="Amazon test on web browser">
-        <parameter name = "url" value="http://www.amazon.com" />
+    <parameter name = "useSauceLabs" value="false" />
+    <parameter name = "userName" value="ilhomdjalalov" />
+    <parameter name = "key" value="3498dafc-2983-464f-be8e-631116386342" />
+    <parameter name = "os" value="Windows 8" />
+    <parameter name = "browserName" value="chrome" />
+    <parameter name = "browserVersion" value="35" />
+    <parameter name = "url" value="http://www.amazon.com" />
+
+
+
             <test name="Amazon homepage">
                 <classes>
                     <class name="com.amazon.AmazonHome1" />
